@@ -46,8 +46,8 @@ sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf
 
 git clone https://github.com/kiddin9/openwrt-packages
 shopt -s extglob
-rm -rf openwrt-packages/!(luci-app-netdata|luci-app-fullconenat|fullconenat)
-cp -r openwrt-packages/{luci-app-netdata,luci-app-fullconenat,fullconenat} package/
+rm -rf openwrt-packages/!(luci-app-netdata)
+cp -r openwrt-packages/{luci-app-netdata} package/
 rm -rf openwrt-packages
 
 #git clone https://github.com/coolsnowwolf/luci luci1
@@ -87,7 +87,7 @@ git clone -b main --depth 1 https://github.com/xiaorouji/openwrt-passwall2.git
 git clone -b main --depth 1 https://github.com/xiaorouji/openwrt-passwall.git
 #mosdns
 # git clone -b v5 --depth 1 https://github.com/sbwml/luci-app-mosdns.git
-git clone --depth=1 https://github.com/fw876/helloworld.git
+#git clone --depth=1 https://github.com/fw876/helloworld.git
 #git clone https://github.com/kevinCSDN/lua-maxminddb.git  #git lua-maxminddb 依赖
 #git clone https://github.com/qqhpc/jerrykuku-luci-app-vssr.git
 #git clone --depth=1 https://github.com/cfxy2010/luci-app-turboacc.git
